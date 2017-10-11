@@ -9,13 +9,11 @@ My default configuration after installation
 
 
 ## Luci & OpenWrt & Kernel versioning
-```sh
-Hostname	OpenWrt
-Model	Nexx WT3020
-Firmware Version	OpenWrt Chaos Calmer 15.05 / LuCI (git-15.248.30277-3836b45)
-Kernel Version	3.18.20
-```
 
+* Hostname `OpenWrt`
+* Model	`Nexx WT3020`
+* Firmware Version	`OpenWrt Chaos Calmer 15.05 / LuCI (git-15.248.30277-3836b45)`
+* Kernel Version	`3.18.20`
 
 
 ## Installation
@@ -42,7 +40,7 @@ BusyBox v1.23.2 (2015-07-25 03:03:02 CEST) built-in shell (ash)
   * 1 tsp. Grenadine Syrup
  -----------------------------------------------------
 
-root@OpenWrt:~# wget -qO - http://onionwrt.us.to/install | sh
+root@OpenWrt:~# wget -qO - https://github.com/enovella/tor-router-nexx-wt3020/blob/master/onionwrt/install-tor.sh | sh
 Installing tor (0.2.5.12-1) to root...
 Downloading http://downloads.openwrt.org/chaos_calmer/15.05/ramips/mt7620/packages/packages/tor_0.2.5.12-1_ramips_24kec.ipk.
 Installing libevent2 (2.0.22-1) to root...
@@ -63,6 +61,7 @@ Configuring libopenssl.
 Configuring tor.
 ```
 
+After installation:
 ```sh
 $ ssh root@192.168.10.1
 root@192.168.10.1's password: t0rmenta
@@ -184,3 +183,5 @@ udp        0      0 :::547                  :::*                                
 udp        0      0 :::53                   :::*                                1083/dnsmasq
 root@OpenWrt:~#
 ```
+
+Enjoy!
